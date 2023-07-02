@@ -1,2 +1,2 @@
-# my-resume
- My Detailed Resume for Web Developer Position
+# Resume for Web Developer
+ My Detailed Resume for Web Developer Position in any software organization
