@@ -1,0 +1,509 @@
+
+/*https://youtu.be/DVeHU0Ngzxk*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  
+  /* the defult is content-box ... border-box allowes the porder thikness and the padding valeu withein the orgenal width of the element*/
+  
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+  
+}
+
+
+body{
+
+background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+
+
+header {
+  background-color:#f0f0f0;
+  width:100%;
+  
+  /*position fixed let th header alweas exiest in the top of the page*/
+  
+  position:fixed;
+  
+  /* z-index allows to the item to be on top of other items*/
+  
+  z-index:999;
+  
+  display: flex;
+  
+  /*justify-content makes the space between the children elemints on the main deraction*/
+  
+  justify-content:space-between;
+  
+  
+   /*align-items works in the cross deraction*/
+  
+  align-items:center;
+  
+ padding:10px 200px;
+  
+}
+
+
+
+.logo {
+  text-decoration:none;
+  color:#3a6cf4;
+  text-transform:uppercase;
+  font-weight:600;
+  
+  /* 'em' is relatively to the parent font size witch is now 16px for the body*/
+  font-size:1.8em;
+  
+}
+
+
+
+.navigation a {
+  
+  color:#3a6cf4;
+  text-decoration:none;
+  font-size:1.1em;
+  font-weight:400;
+  padding-left:30px;
+   
+}
+
+.navigation a:hover{color:#601cfc;}
+
+section{
+  padding: 100px 200px;
+}
+
+.main{
+  width: 100%;
+  /* 'vh' view port means covering the whole screen, min-height means from 100 and more dpinding in the content*/
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  background: url(https://it.maandag.nl/wp-content/uploads/2021/05/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg) no-repeat;
+ background-size:cover;
+ background-position:center;
+ background-attachment:fixed;
+  
+}
+
+.main h2{
+  
+  color:#fff;
+  font-size:2em;
+  font-weight:500;
+}
+
+.main h2 span{
+  display:inline-block;
+  margin-top:10px;
+  color:#4e9eff;
+  font-size:1.5em;
+  font-weight:600;
+}
+
+h3{
+  color:#fff;
+  font-size:1.5em;
+  font-weight:400;
+  letter-spacing:1px;
+  margin-top:10px;
+  Margin-bottom:10px;
+}
+
+.main-btn{
+  color:#ffff;
+  background-color:#3a6cf4;
+  text-decoration:none;
+  font-size:1.1em;
+  font-weight:400;
+  display:inline-block;
+  padding:0.9375em;
+  letter-spacing:1px;
+  border-radius:15px;
+  margin-bottom:20px;
+  transition:0.7s ease;
+}
+
+.main-btn:hover{
+  background-color:#0a49f6;
+  transform:scale(1.1);
+}
+
+.social-icons a{
+  color:#fff;
+  font-size:1.2em;
+  margin:10px;
+}
+
+.cards{
+  width:80%;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  margin:auto; 
+ 
+}
+
+
+.content .card{
+  float:left;
+  width:30%;
+ 
+}
+
+.clear {clear:both;
+  
+}
+
+.titel {
+  display:flex;
+  justify-content:center;
+  color:#3a6cf4;
+  font-size:2.2em;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.card{
+  background-color:rgba(255,255,255,0.1);
+  
+  margin:10px;
+  padding:20px;
+  
+  /*shadow right or left,shadow top or bottom , shadow blurry ,color */
+  box-shadow: 5px 0px 25px rgba(1,1,1,15%) ;
+  border-radius:10px;
+  
+}
+
+.card:hover{
+  transform: scale(1.1);
+    transition:0.7s ease ;
+    
+}
+.icon{
+  color:#3a6cf4;
+  font-size:5em;
+  text-align:center;
+  
+}
+.info { 
+  text-align:center;
+}
+.info h3{
+  color:#3a6cf4;
+  font-size:1.3em;
+  font-weight:700;
+  margin:20px;
+  
+}
+
+.projects {
+  background-color:#2f4353;
+background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  
+}
+
+
+
+.projects .content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+ 
+}
+
+.project-card{
+  background-color:#fff;
+  border:1px solid #fff;
+  min-height:14em;
+  width:23em;
+  overflow:hidden;
+  border-radius:10px;
+  margin:20px;
+  transition: 0.7s ;
+  
+}
+
+.project-card:hover{
+  transform:scale(1.1); opacity:0.9;
+  
+}
+
+
+.prject-image img{
+  width:100%;
+}
+.project-info{
+  padding:1em;
+}
+
+.project-titel{
+  display:flex;
+  justify-content:space-between;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-top:10px;
+  
+}
+
+.more-details{
+  text-decoration:none;
+  font-weight:500;
+  font-size:0.9em;
+  color:#3a6cf4;
+}
+
+.more-details:hover{
+  color:#601cfc;
+}
+
+
+
+
+.mywork{
+  width:80%;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  margin:auto; 
+  
+  
+}
+
+
+table {
+  /*collapse is reducing the mid spaces between the cells */
+  border-collapse: collapse;
+  margin: auto; 
+  margin-bottom:50px;
+  font-size:1.4em;
+  border-radius:5px 5px 0 0;
+  /* using overflow hidden because the tr still have the square edge */
+  overflow:hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.50);
+  
+}
+
+
+thead tr{
+  background-color:#2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%) ;
+  color:#ffff;
+  text-align:left;
+  
+}
+
+table th , table td {
+  padding:12px 15px;
+  
+}
+
+tr {
+  border-bottom:1px solid #dddd ;
+}
+tr:nth-of-type(even){
+  background-color:#f3f3f3;
+}
+tr:last-of-type{ 
+  border-bottom: 2px solid #2f4353;
+  
+}
+
+
+.cards-contact .content{
+  display:flex;
+  justify-content:center;
+}
+
+
+
+footer{
+ 
+  display:flex;
+  justify-content:space-between; 
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  padding:10px;
+ 
+}
+
+
+
+@media (min-width:768px) and (max-width:1270px){
+  body{
+    font-size:13px;   
+}
+  section{
+    padding:20px 40px;
+  }
+  
+ 
+  .navigation a {
+  
+  padding-left:10px;
+ 
+}
+  
+  header{
+    padding:10px 100px;
+  }
+  
+  .main h2{
+  
+  color:#fff;
+  font-size:2em;
+  font-weight:400;
+}
+
+.main h2 span{
+  margin-top:7.5px;
+  font-size:1.3em;
+  font-weight:500;
+}
+
+h3{
+ 
+  font-size:1.25em;
+  font-weight:300;
+  letter-spacing:.75px;
+  margin-top:7.5px;
+  Margin-bottom:7.5px;
+}
+  
+}
+
+
+ 
+@media (min-width:421px) and (max-width:767px){
+  
+  body{
+ font-size:11.5px;   
+}
+  section{
+    padding:10px 50px;
+  }
+  
+  .navigation a {
+  
+  padding-left:10px;
+   
+}
+  
+  header{
+    padding:10px 50px;
+  }
+   .content .card{
+  float:none;
+  width:90%;
+  
+}
+  table th , table td {
+  padding:6px 7.5px;
+  
+}
+}
+
+
+
+
+@media (max-width:420px){
+  
+  body{
+    font-size:10px;   
+   }
+  
+  .titel {
+  
+  margin-bottom:10px;
+  margin-top:30px;  
+  }
+  .main-btn{
+    margin-bottom:10px;
+  }
+  section{
+    padding:5px 25px;
+    }
+  
+  .navigation a{
+  
+  padding-left:5px;
+ 
+  }
+  
+  header{
+    padding:5px 25px;
+    }
+  
+  .main h2{
+  
+  color:#fff;
+  font-size:2em;
+  font-weight:200;
+  }
+
+  .main h2 span{
+  margin-top:5px;
+  font-size:1.3em;
+  font-weight:500;
+  }
+
+  h3{
+ 
+  font-size:1.25em;
+  font-weight:300;
+  letter-spacing:.5px;
+  margin-top:5px;
+  Margin-bottom:5px;
+  }
+  
+  .main-btn{
+ 
+  border-radius:7.5px;
+
+}
+
+ .social-icons a{
+  
+  margin:7.5px;
+   } 
+  .content .card{
+  float:none;
+  width:90%;
+ 
+   }
+ .project-card{
+   margin:10px;
+  }
+ 
+  
+  table {
+  
+  margin: 5px 0;
+  margin-top:10px;
+  
+}
+table th , table td {
+  padding:4px 5px;
+  
+}
+  tr {
+  border-bottom:.5px solid #dddd ;
+}
+
+
+tr:last-of-type{ 
+  border-bottom: .75px solid #2f4353;
+  
+}
+  
+}
+ 
+    
+ 
+
+
